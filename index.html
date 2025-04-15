@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Maxツ</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 🔥 GIF Background -->
+  <div class="gif-background"></div>
+
+  <!-- 🔊 Audio Player (autoplay + hidden) -->
+  <audio autoplay loop class="audio-player" id="bgMusic">
+    <source src="music/lofi.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+  
+  <!-- 🎧 Minimal Music Control -->
+  <div class="music-controller" id="musicCtrl">
+    <button id="musicToggle">⏸</button>
+  </div>
+
+  <header class="navbar">
+    <div class="container">
+      <div class="logo">MLudio</div>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="burger" id="burger">&#9776;</div>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="section home animate">
+    <div class="container">
+      <h1>Hello, I'm <span class="highlight">MLudio</span></h1>
+      <p id="typing-text"></p>
+    </div>
+  </section>
+
+  <section id="about" class="section animate">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Passionate about music, development, and design. Welcome to my digital space!</p>
+    </div>
+  </section>
+
+  <section id="projects" class="section animate">
+    <div class="container">
+      <h2>Projects</h2>
+      <p>Coming soon...</p>
+    </div>
+  </section>
+
+  <section id="contact" class="section animate">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Feel free to reach out via social media or email.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 MLudio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
