@@ -51,6 +51,7 @@ window.addEventListener('load', handleScrollAnimation);
 // 🎵 Music Toggle
 const audio = document.getElementById('bgMusic');
 const toggleBtn = document.getElementById('musicToggle');
+const volumeBtn = document.getElementById('volumeToggle');
 
 toggleBtn.addEventListener('click', () => {
   if (audio.paused) {
@@ -60,4 +61,9 @@ toggleBtn.addEventListener('click', () => {
     audio.pause();
     toggleBtn.textContent = '▶️';
   }
+});
+
+volumeBtn.addEventListener('click', () => {
+  audio.muted = !audio.muted;
+  volumeBtn.textContent = audio.muted ? '🔇' : '🔊';
 });
