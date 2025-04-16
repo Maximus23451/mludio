@@ -105,6 +105,9 @@ body {
   display: block;
   color: var(--white);
 }
+.overlay.show {
+  display: block;
+}
 
 /* Sections */
 .section {
