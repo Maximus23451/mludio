@@ -69,6 +69,9 @@ body {
   flex-direction: column;
   gap: 1rem;
 }
+.nav-links.show {
+  display: flex;
+}
 .nav-links li a {
   transition: color 0.3s;
 }
