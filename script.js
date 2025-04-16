@@ -67,3 +67,25 @@ volumeBtn.addEventListener('click', () => {
   audio.muted = !audio.muted;
   volumeBtn.textContent = audio.muted ? '🔇' : '🔊';
 });
+const burger = document.getElementById('burger');
+const navLinks = document.getElementById('navLinks');
+const overlay = document.getElementById('overlay');
+
+function closeMenu() {
+  navLinks.classList.remove('show');
+  overlay.classList.remove('show');
+}
+
+burger.addEventListener('click', () => {
+  navLinks.classList.toggle('show');
+  overlay.classList.toggle('show');
+});
+
+// 🖱️ Click outside nav closes menu
+overlay.addEventListener('click', closeMenu);
+
+// 🔗 Close menu on nav click (optional)
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', closeMenu);
+});
+
