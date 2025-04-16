@@ -21,7 +21,7 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 });
 // Typing Effect
 const typingText = document.getElementById("typing-text");
-const phrases = ["Web Developer.", "Music Lover.", "Creative Thinker."];
+const phrases = ["Maxツ.", "Music Lover.", "vmhd.my.id."];
 let phraseIndex = 0;
 let letterIndex = 0;
 let isDeleting = false;
